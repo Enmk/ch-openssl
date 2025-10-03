@@ -201,6 +201,7 @@ static int kek_unwrap_key(unsigned char *out, size_t *outlen,
                           const unsigned char *in, size_t inlen,
                           EVP_CIPHER_CTX *ctx)
 {
+    abort();
     size_t blocklen = EVP_CIPHER_CTX_get_block_size(ctx);
     unsigned char *tmp;
     int outl, rv = 0;
